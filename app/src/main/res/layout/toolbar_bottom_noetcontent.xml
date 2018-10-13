@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="horizontal"
+    android:background="#c6d6e7">
+
+
+    <Button
+        android:id="@+id/add_image_notes_content_toolbar"
+        android:layout_width="29dp"
+        android:layout_height="27dp"
+        android:background="@drawable/ic_menu_camera"
+        android:layout_centerInParent="true"/>
+    <!--<Button-->
+        <!--android:id="@+id/get_locaiton_toolbar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="location"-->
+        <!--android:layout_toLeftOf="@id/add_image_notes_content_toolbar"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/get_weather_content_toolbar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="weather"-->
+        <!--android:layout_toRightOf="@id/add_image_notes_content_toolbar"/>-->
+
+</RelativeLayout>

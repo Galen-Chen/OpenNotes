@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/add_tag_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="tag"
+        android:textColor="#4d9def"
+        android:background="@android:color/transparent"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/save_tag_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/add_tag_edittext"
+        android:background="@drawable/ic_action_save_tag"
+        android:visibility="gone"/>
+
+</RelativeLayout>

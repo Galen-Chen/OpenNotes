@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.galen.opennotes.Notes.NotesActivity">
+
+    <include layout="@layout/tool_bar_notes_view" />
+
+    <EditText
+        android:id="@+id/notes_details_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/notes_details_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:focusable="true"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/notes_details_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:focusable="true"
+        android:textSize="20sp" />
+
+    <Button
+    android:id="@+id/wall"
+    android:layout_width="75dp"
+    android:layout_height="40dp"
+    android:text="Wall"
+    android:textColor="#01020A"
+    android:textSize="22sp"
+    android:background="@drawable/wall_button"
+    android:shadowColor="#A8A8A8"
+    android:shadowDx="0"
+    android:shadowDy="0"
+    android:shadowRadius="12"
+    android:layout_marginLeft="14dp"
+    android:layout_marginRight="14dp"
+    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/your_notes_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Notes"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/add_notes_content_button"
+            android:layout_marginTop="5dp"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/ic_action_add_notes" />
+
+    </RelativeLayout>
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/notecontentlist_recyclerview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="14dp"
+       android:layout_marginRight="14dp">
+
+   </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

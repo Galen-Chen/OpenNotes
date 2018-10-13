@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/my_recordslist_rootview"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/record_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+
+        android:textColor="#4d9def"/>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/record_message_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Practiced hour is "
+        android:textStyle="italic"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/this_recod_total_hours_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="20sp"/>
+    </LinearLayout>
+
+</LinearLayout>

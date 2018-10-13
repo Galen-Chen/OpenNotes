@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/notecontentlist_rootView">
+
+    <TextView
+        android:id="@+id/notecontentlist_datecreated_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#4d9def"/>
+
+
+
+    <TextView
+        android:id="@+id/notecontentlist_thenotes_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="testtestnotes"
+        android:textSize="20sp"/>
+    <ImageView
+        android:id="@+id/notecontentlist_imageview"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+</LinearLayout>

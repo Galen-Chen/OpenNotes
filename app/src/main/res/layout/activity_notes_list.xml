@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.galen.opennotes.Notes.NotesListActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/myrecods_frame_toolbar">
+
+        <include layout="@layout/notes_list_activity_toolbar" />
+
+
+    </FrameLayout>
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/myrecods_frame_toolbar"
+    android:id="@+id/notelist_frame_content">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/note_list_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    
+</FrameLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_notes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+
+</RelativeLayout>

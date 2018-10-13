@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#4d9def"
+    android:orientation="horizontal">
+
+
+    <Button
+        android:id="@+id/go_back_to_main_button"
+        android:layout_width="29dp"
+        android:layout_height="27dp"
+        android:visibility="visible"
+        android:elevation="10dp"
+        android:layout_marginLeft="14dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_action_gobackwhite"
+      />
+    <TextView
+        android:id="@+id/activity_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tw__solid_white"
+        android:text="title"
+        android:layout_toRightOf="@id/go_back_to_main_button"
+        android:visibility="visible"
+        android:layout_marginLeft="28dp"
+        android:textSize="22sp"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/cancel_theremove_action"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:background="@drawable/ic_action_cancel"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/remove_button_notes"
+        android:background="@drawable/delete_white"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="14dp"
+        android:layout_width="22dp"
+        android:layout_height="27dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

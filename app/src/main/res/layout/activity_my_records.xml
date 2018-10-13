@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.galen.opennotes.myrecords.MyRecordsActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myrecods_frame_toolbar">
+
+        <include layout="@layout/notes_list_activity_toolbar" />
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/totaltraining_message"
+        android:layout_below="@id/myrecods_frame_toolbar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total trained hour is:  "
+        android:textColor="#000000"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/total_training_hour_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totaltraining_message"
+        android:layout_marginLeft="14dp"
+        android:id="@+id/myrecords_frame_content">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recordslist_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    </FrameLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_myrecords_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+
+
+
+</RelativeLayout>
